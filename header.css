@@ -1,0 +1,44 @@
+.header {
+    width:100%;
+    max-width: 1110px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    border-bottom: 1px solid #eef1f1;
+    
+}
+.header_logo svg{
+    color: #555f62;
+}
+.header_nav_menu {
+    display: flex;
+   
+}
+.nav_link{
+    text-decoration: none;
+    color:#222;
+    padding:20px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+.header_buttons {
+    display: flex;
+    gap: 10px;
+}
+.header_btn {
+    display: flex;
+    gap:7px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    color:#555f62;
+}
+.blue {
+   color: #182cc0;
+}

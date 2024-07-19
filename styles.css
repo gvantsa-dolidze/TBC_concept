@@ -10,14 +10,8 @@ body {
     max-width: 1110px;
     width:100%;
     margin:auto;
-    /* display: flex;
-    flex-direction: column; */
 }
-.first_section_main_div p {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1.5;
-}
+
 .img_container{
     padding:20px 0px;
    overflow: hidden;

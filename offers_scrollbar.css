@@ -11,7 +11,7 @@
     display: flex;
     overflow:auto;
     gap:30px;
-    /* scrollbar-width: 100px; */
+    scrollbar-width: 100px;
     padding-bottom:50px;
 }
 .card {

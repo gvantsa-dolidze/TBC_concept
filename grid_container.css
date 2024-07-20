@@ -9,7 +9,6 @@
     position: relative;
     overflow: hidden;
   }
-  
   .item1 {
     grid-column: 1 / span 2;
     grid-row: 1;

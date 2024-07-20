@@ -12,6 +12,7 @@
   .item1 {
     grid-column: 1 / span 2;
     grid-row: 1;
+
   }
   
   .item2 {
@@ -26,10 +27,26 @@
   .grid-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
+    object-fit: cover;    
 }
-.grid-item a {
-    display: block;
-    height: 100%;
+
+ .text_on_img {
+  color:#fff;
+  position: absolute;
+  bottom:50px;
+  left:40px;
+  text-align: left;
+  cursor: pointer;
+  
+ }
+.text_on_img a {
+  display: flex;
+  gap:5px;
+  color:#fff;
+  text-decoration: underline;
+
+}
+.text_on_img a:hover {
+  color:#555f62;
+  
 }

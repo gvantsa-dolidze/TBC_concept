@@ -23,9 +23,28 @@
     flex-direction: column;
     font-size: 14px;
 }
-.card a img{ 
-    border-radius: 8px 8px 0px 0px; 
+
+
+.card_img_container {
+    position: relative;
 }
-.card div {
+
+.bottom-img {
+    border-radius: 8px 8px 0px 0px;
+    object-fit: cover;
+}
+.top-logo {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width:25%;
+    background-color: #fff;
+    border-radius: 7px 0px 0px 7px;
+    z-index: 1;
+}
+
+
+
+.title_text {
     padding: 30px;
 }

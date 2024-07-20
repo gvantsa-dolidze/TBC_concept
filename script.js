@@ -7,8 +7,11 @@ fetch("scrollbar.json")
       card.className = "card";
       card.innerHTML = `
     <a href="">
-        <img src="${item.img}" alt="Image">  
-      <div>
+    <div class="card_img_container">
+        <img src="${item.img}" class="bottom-img" alt="Image">  
+        <img src="${item.logo}" class="top-logo" alt="logo">
+        </div>
+      <div class="title_text">
         <p>${item.title}</p>
         <h3>${item.paragraph}</h3>
       </div>

@@ -67,5 +67,31 @@
             "paragraph":"თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი ფორმატი - პრემიუმ ნაკრები , სხვა საბანკო და არასაბანკო უპირატესობებთან ერთად, პირადი ბანკირის მომსახურებას  გულისხმობს. პირადი ბანკირის მთავარი ამოცანა მომხარებლისთვის ცხოვრების გამარტივება და მისთვის უმაღლესი ხარისხის მომსახურების უზრუნველყოფაა."
         }
         
+    ],
+    "awards" :[
+        {
+            "id": "1",
+            "img": "img/dffiuhjz.i3xglobal-finance-logo-8F6EBD1345-seeklogo.com.png",
+            "title": "საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2024",
+            "paragraph": "The Global Finance"
+        },
+        {
+            "id": "2",
+            "img": "img/kxhrqpjz.vqveuromoney-institutional-investor-plc-logo-vector.png",
+            "title": "საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2023 ",
+            "paragraph": "Euromoney"
+        },
+        {
+            "id": "3",
+            "img": "img/dffiuhjz.i3xglobal-finance-logo-8F6EBD1345-seeklogo.com.png",
+            "title": "საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2022",
+            "paragraph": "The Global Finance"
+        },
+        {
+            "id": "4",
+            "img": "img/hke31ar3.p5dthe-banker-logo-png-transparent.png",
+            "title": "საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში 2021",
+            "paragraph": "The Banker & PWM"
+        }
     ]
 }

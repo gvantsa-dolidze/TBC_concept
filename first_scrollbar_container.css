@@ -1,29 +1,4 @@
-body {
-    margin:0;
-    padding:0;
-    font-family: "Open Sans", sans-serif;
-}
-h1, h2, h3, h4,h5, h6 {
-    padding:0; 
-    margin:0;
-}
-.first_section {
-    background-color: #f9fafa;   
-}
-.first_section_main_div {
-    max-width: 1110px;
-    width:100%;
-    margin:auto;
-}
-.section_title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-/* .section_title a{
+.section_title a{
     display: flex;
     text-decoration: none;
     color: #182cc0;
@@ -48,7 +23,4 @@ h1, h2, h3, h4,h5, h6 {
     flex-direction: column;
     font-size: 14px;
     
-} */
-
-
-
+}

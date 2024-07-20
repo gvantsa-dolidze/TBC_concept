@@ -27,4 +27,11 @@ a{
 }
 
 
+.awards_scrollbar  .card{
+    background-color: #fff;
+    border: none;
+    justify-content: space-around;
+  
+}
+
 

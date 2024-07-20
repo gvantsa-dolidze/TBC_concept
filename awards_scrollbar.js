@@ -6,9 +6,9 @@ fetch("data.json")
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
-    <a href="">
-    <div class="">
-        <img src="${item.img}" class="bottom-img" alt="Image" width="100px">  
+    <a href="#">
+    <div class="card_img_container">
+        <img src="${item.img}" class="bottom-img" alt="Image" width="50%">  
         </div>
       <div class="title_text">
         <h3>${item.title}</h3>

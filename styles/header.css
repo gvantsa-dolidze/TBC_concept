@@ -10,7 +10,9 @@
     right: 0;
     z-index: 1000;
 }
-
+.header a{
+   color: #555f62;
+}
 .header_main_div {
     width:100%;
     max-width: 1110px;
@@ -35,7 +37,17 @@
 }
 .header_buttons {
     display: flex;
-    gap: 10px;
+    gap: 10px;   
+}
+.lang_btn{
+    width:64px;
+    height: 32px;
+    border-radius: 4px;
+    
+}
+
+.lang_btn:hover {
+        background-color: #f9fafa;
 }
 .header_btn {
     display: flex;
@@ -47,6 +59,11 @@
     font-weight: 700;
     line-height: 1.4;
     color:#555f62;
+    align-items: center;
+    justify-content: center;
+}
+.header_btn:first-child:hover, .header_btn:nth-child(2):hover{
+    color:#3295ce;
 }
 .blue {
    color: #182cc0;

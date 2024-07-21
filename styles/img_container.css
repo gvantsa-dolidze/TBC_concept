@@ -16,7 +16,7 @@
     left:10%;
     color:#fff;
 }
-.img_container button {
+.blue_btn {
     width: 151px;
     height: 50px;
     background-image: linear-gradient(15deg, #001682, #3240e5);
@@ -28,4 +28,11 @@
     gap: 7px;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s, ease-in-out;
 }
+.blue_btn:hover{
+    background: linear-gradient(15deg, #3295ce, #3295ce);
+}
+
+
+/* ლურჯ ღილაკზე ჰოვერის დროს transition არ მუშაობს */

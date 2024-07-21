@@ -66,6 +66,14 @@
         font-size: 12px;
         font-weight: 700;
         line-height: 1.33;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .btn_for_mobile:hover {
+        border:1px solid gainsboro;
     }
     .second_section_main_div img {
         width:92%;

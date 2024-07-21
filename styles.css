@@ -7,10 +7,13 @@ h1, h2, h3, h4,h5, h6 {
     padding:0; 
     margin:0;
 }
+main {
+    padding-top:79px;
+}
 .first_section, .third_section {
     background-color: #f9fafa;   
 }
-.first_section_main_div, .third_section_main_div {
+.first_section_main_div, .third_section_main_div, .footer_main_div {
     max-width: 1110px;
     width:100%;
     margin:auto;
@@ -34,4 +37,9 @@ a{
   
 }
 
+
+.footer{
+    background-color: #fff;
+    
+}
 

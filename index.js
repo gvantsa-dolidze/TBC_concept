@@ -1,6 +1,19 @@
 fetch("data.json")
   .then((response) => response.json())
   .then((data) => {
+    const container0 = document.getElementById("grid-container");
+    data.products.forEach((item) => {
+      const gridElement = document.createElement("div");
+      gridElement.className = `grid-item item${item.id}`;
+      gridElement.innerHTML = `
+            <a href="#"> <img src="${item.img}"></a>
+            <div class="text_on_img">
+            <h3>${item.title}</h3>
+            <a href><span class="bi bi-arrow-right"></span><span>${item.link_name}</span></a>
+            </div>
+`;
+      container0.appendChild(gridElement);
+    });
     const container = document.getElementById("flex_scrollbar");
     data.offers.forEach((item) => {
       const card = document.createElement("div");
@@ -43,9 +56,9 @@ fetch("data.json")
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
-    <a href="#">
+    <a href="#" class="card">
     <div class="card_img_container">
-        <img src="${item.img}" class="bottom-img" alt="Image" width="50%">  
+        <img src="${item.img}" class="bottom-img" alt="Image" width="30%" style="padding-left:30px">  
         </div>
       <div class="title_text">
         <h3>${item.title}</h3>

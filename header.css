@@ -1,13 +1,22 @@
 .header {
+    background-color: #fff;
+    border-bottom: 1px solid #eef1f1; 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_main_div {
     width:100%;
     max-width: 1110px;
-    /* height:79px; */
-    margin:auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:#fff;
-    border-bottom: 1px solid #eef1f1;
 }
 .header_logo svg{
     color: #555f62;

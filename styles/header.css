@@ -9,6 +9,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    height:79px;
 }
 .header a{
    color: #555f62;
@@ -67,3 +68,29 @@
 .blue_header_btn {
    color: #182cc0;
 }
+.burger {
+    display: none;
+  }
+.header_logo_burger{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        padding-left:15px;
+        padding-right:15px;
+    }
+   .header_nav_menu, .lang_btn {
+    display: none;
+   }
+   .header_logo_burger {
+    display: block;
+   }
+   .header_logo{
+    display: none;
+   }
+   .burger{
+    display: block;
+    font-size: 25px;
+  }
+  }

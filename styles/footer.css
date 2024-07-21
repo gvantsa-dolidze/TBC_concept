@@ -67,6 +67,7 @@ strong {
   color: #182cc0;
   background-color: #eee;
 }
+
 @media only screen and (max-width: 600px) {
   .footer {
     padding-left:15px;
@@ -85,4 +86,5 @@ strong {
   flex-direction: column-reverse;
   align-items: flex-start;
 }
+
 }

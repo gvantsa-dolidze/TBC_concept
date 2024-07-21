@@ -25,6 +25,9 @@
     cursor: pointer;
     background-color:#fff;
 }
+.second_section_main_div button:hover {
+   background-color: #f9fafa
+}
 .second_section_main_div p {
     font-size: 16px;
     line-height: 1.7;

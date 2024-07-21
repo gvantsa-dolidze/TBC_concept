@@ -33,6 +33,8 @@
 .blue_btn:hover{
     background: linear-gradient(15deg, #3295ce, #3295ce);
 }
-
+.section_title a:hover {
+    color:#3295ce;
+}
 
 /* ლურჯ ღილაკზე ჰოვერის დროს transition არ მუშაობს */

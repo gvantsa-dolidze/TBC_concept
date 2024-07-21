@@ -1,65 +1,69 @@
-
-.footer{
-    background-color: #fff;
+.footer {
+  background-color: #fff;
 }
-
-.footer_top, .footer_bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:28px 0px;
+.footer_top,
+.footer_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 0px;
 }
-
- .footer_bottom div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color:#555f62;
-    gap:20px;
-    font-size: 12px;
+.footer_bottom div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #555f62;
+  gap: 20px;
+  font-size: 12px;
 }
 .footer_bottom svg {
-    width:21px;
-    height:32px;
+  width: 21px;
+  height: 32px;
 }
-.footer_bottom a{
-    color:#555f62;
+.footer_bottom a {
+  color: #555f62;
 }
-
-.footer_main{
-    display: flex;
-    justify-content: flex-start;
-    gap: 150px;
-    padding-top: 50px ;
-    padding-bottom: 50px;
+.footer_main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-
 .footer_main .flex_row {
-    display: flex;
-    gap:150px;
+  display: flex;
+  gap: 150px;
 }
-.footer_main div nav{
-    display: flex;
-    flex-direction: column;
-    gap:25px;
+.footer_main .flex_row a:hover {
+  color: #182cc0;
+}
+.footer_main .flex_column a:hover {
+  text-decoration: underline;
+}
+.footer_main div nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 strong {
-    color:black;
+  color: black;
 }
-.footer_main a{
-    color: #555f62;
-    display: flex;
-    gap:5px;
+.footer_main a {
+  color: #555f62;
+  display: flex;
+  gap: 5px;
 }
-
 .footer_buttons_flex button {
-    border: none;
-    border-radius: 6px;
-    width:40px;
-    height:40px;
-    background-color: #f9fafa;
-    cursor: pointer;
-    color:#555f62;
+  border: none;
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  background-color: #f9fafa;
+  cursor: pointer;
+  color: #555f62;
 }
-
+.footer_buttons_flex button:hover {
+  color: #182cc0;
+  background-color: #eee;
+}

@@ -49,6 +49,8 @@ strong {
 }
 .footer_main a{
     color: #555f62;
+    display: flex;
+    gap:5px;
 }
 
 .footer_buttons_flex button {

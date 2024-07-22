@@ -38,7 +38,7 @@ fetch("data.json")
       const card = document.createElement("div");
       // card.className = "card";
       card.innerHTML = `
-    <a href="" class="card">
+    <a href="" class="card products_card">
     <div class="">
         <img src="${item.img}" class="bottom-img" alt="Image" width="100%">  
         </div>
@@ -54,9 +54,9 @@ fetch("data.json")
     const container1 = document.getElementById("awards_scrollbar");
     data.awards.forEach((item) => {
       const card = document.createElement("div");
-      card.className = "card";
+      // card.className = "card";
       card.innerHTML = `
-    <a href="#" class="card">
+    <a href="#" class="card awards_card">
     <div class="card_img_container">
         <img src="${item.img}" class="bottom-img" alt="Image" width="30%" style="padding-left:30px">  
         </div>

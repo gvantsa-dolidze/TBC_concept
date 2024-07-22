@@ -5,7 +5,7 @@
   font-size: 12px;
 }
 .img_container {
-  padding: 20px 0px;
+  padding-top: 50px;
   overflow: hidden;
   position: relative;
 }
@@ -15,7 +15,6 @@
   object-fit: cover;
   object-position: center;
   border-radius: 10px;
-  padding-top: 50px;
 }
 .absolute {
   position: absolute;
@@ -57,6 +56,7 @@
     padding-bottom: 100%;
     position: relative;
     overflow: hidden;
+    margin-top: 30px;
   }
   .bg_img {
     position: absolute;

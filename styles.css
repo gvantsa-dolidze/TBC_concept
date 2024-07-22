@@ -48,3 +48,17 @@ a{
 .bi-search {
     font-size: 20px;
 }
+
+.fixed_button {
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+.fixed_button i{
+    font-size: 50px;
+    color:#424a4d;
+    position: fixed;
+    bottom: 30px; /* Adjust this value to your preference */
+    right: 30px; /* Adjust this value to your preference */
+    padding: 10px 20px;
+}

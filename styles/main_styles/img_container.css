@@ -1,77 +1,89 @@
 .section_title {
-    padding: 24px 0px;
+  padding: 24px 0px;
 }
 .section_title span {
-    font-size: 12px;
+  font-size: 12px;
 }
-.img_container{
-    padding:20px 0px;
-    overflow: hidden;
-    position: relative; 
+.img_container {
+  padding: 20px 0px;
+  overflow: hidden;
+  position: relative;
 }
 .bg_img {
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius:10px;
-    padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  padding-top: 50px;
 }
 .absolute {
-    position: absolute;
-    bottom: 30%;
-    left:10%;
-    color:#fff;
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  color: #fff;
 }
 .blue_btn {
-    width: 151px;
-    height: 50px;
-    background-image: linear-gradient(15deg, #001682, #3240e5);
-    border: none;
-    border-radius: 4px;
-    color:#fff;
-    cursor:pointer;
-    display: flex;
-    gap: 7px;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s, ease-in-out;
+  width: 151px;
+  height: 50px;
+  background-image: linear-gradient(15deg, #001682, #3240e5);
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s, ease-in-out;
 }
-.blue_btn:hover{
-    background: linear-gradient(15deg, #3295ce, #3295ce);
+.blue_btn:hover {
+  background: linear-gradient(15deg, #3295ce, #3295ce);
 }
 .section_title a:hover {
-    color:#3295ce;
+  color: #3295ce;
 }
-
+.text_section p{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 60px 0px;
+}
 /* ლურჯ ღილაკზე ჰოვერის დროს transition არ მუშაობს */
 @media only screen and (max-width: 600px) {
-    .img_container {
-        width: 100%; 
-        height: 0; 
-        padding-bottom: 100%; 
-        position: relative;
-        overflow: hidden; 
-      }
-      .bg_img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        top: 0;
-        left: 0;
-        border-radius: 0px;
-      }
-     .absolute{
-        bottom: 15%;
-        font-size: 14px;
-    } 
-    .blue_btn{
-         width: 250px;
+  .img_container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
   }
-  
-  .section_title, .text_section{
-    padding-left:15px;
+  .bg_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+  }
+  .absolute {
+    bottom: 15%;
+    font-size: 14px;
+  }
+  .blue_btn {
+    width: 250px;
+  }
+
+  .section_title,
+  .text_section {
+    padding-left: 15px;
     padding-right: 15px;
   }
+  .text_section p{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 }

@@ -85,6 +85,7 @@
    }
    .header_logo_burger {
     display: block;
+    cursor: pointer;
    }
    .header_logo{
     display: none;

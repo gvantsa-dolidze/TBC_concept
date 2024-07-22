@@ -32,8 +32,8 @@ main {
     align-items: center;
     justify-content: space-between;
     padding:40px  0px;
-                  font-size: 24px;  
-                  font-weight: 700;
+    font-size: 24px;  
+    font-weight: 700;
 }
 a{
     text-decoration: none;
@@ -48,4 +48,3 @@ a{
 .bi-search {
     font-size: 20px;
 }
-

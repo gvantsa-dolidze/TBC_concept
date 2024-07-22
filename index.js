@@ -73,3 +73,17 @@ fetch("data.json")
   .catch((error) => {
     console.error("Error fetching data:", error);
   });
+
+const hoverContainers = document.querySelectorAll(".lang_buttons_div");
+
+hoverContainers.forEach((container) => {
+  const hiddenButton = container.querySelector(".eng_btn");
+
+  container.onmouseover = () => {
+    hiddenButton.style.display = "inline-block";
+  };
+
+  container.onmouseout = () => {
+    hiddenButton.style.display = "none";
+  };
+});

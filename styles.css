@@ -67,7 +67,27 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
+    position: relative;
+    box-sizing: border-box;
 }
 .eng_btn{
     display: none;
+    border: 1px solid #e1e4e5;
+    background-color: #fff;
+    padding:8px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: #141719;
+    cursor: pointer;
+    width:65px;
+    height: 50px;
+    position: absolute;
+    top: 33px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+}
+.eng_btn:hover {
+    background-color: #f9fafa;     
 }

@@ -90,8 +90,6 @@ hoverContainers.forEach((container) => {
 });
 
 //fixed button
-
-
 const toggleDisplay = () => {
   const noneBtn = document.getElementById("fixed_button_display_none_div");
   const openBtn = document.getElementById("open_btn_icon");
@@ -102,7 +100,7 @@ const toggleDisplay = () => {
   closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
 };
 
-
+//footer navigation menus
 const myFunction1 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none1");

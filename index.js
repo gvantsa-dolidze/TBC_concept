@@ -74,6 +74,9 @@ fetch("data.json")
     console.error("Error fetching data:", error);
   });
 
+
+
+  //choose language bnt
 const hoverContainers = document.querySelectorAll(".lang_buttons_div");
 
 hoverContainers.forEach((container) => {
@@ -87,3 +90,27 @@ hoverContainers.forEach((container) => {
     hiddenButton.style.display = "none";
   };
 });
+
+
+//fixed button
+// const fixedBtn = document.getElementById("fixed_btn");
+// const noneBtn = document.getElementById("fixed_button_display_none_div");
+// fixedBtn.addEventListener("click", function() {
+//   if (noneBtn.style.display === "none") {
+//     noneBtn.style.display = "block"; // Show the div
+//   } else {
+//     noneBtn.style.display = "none"; // Hide the div
+//   }
+// });
+
+function toggleDisplay() {
+  const noneBtn = document.getElementById("fixed_button_display_none_div");
+
+  if (noneBtn.style.display === "none") {
+    noneBtn.style.display = "block";
+  } else {
+    noneBtn.style.display = "none";
+  }
+}
+
+

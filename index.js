@@ -129,9 +129,11 @@ const myFunction3 = (event) => {
 // burger button
 
 const burgerMenu = document.getElementById("burger_btn");
+const burgerIcon = document.getElementById("burger_icon")
 let isOpen = false;
 burgerMenu.addEventListener("click", function () {
   if (!isOpen) {
+    burgerIcon.classList.add("bi-x")
     const box = document.createElement("div");
     box.classList.add("burger_box");
     box.innerHTML = `<footer class="footer">
@@ -277,6 +279,7 @@ burgerMenu.addEventListener("click", function () {
     // Box is open, so close it
     const box = document.querySelector(".burger_box");
     if (box) {
+      burgerIcon.classList.remove("bi-x")
       document.body.removeChild(box);
       isOpen = false;
     }

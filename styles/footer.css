@@ -68,7 +68,7 @@
   color: #182cc0;
   background-color: #eee;
 }
-.with_border svg {
+.with_border span {
   display: none;
 }
 
@@ -105,7 +105,7 @@
   .with_top_border {
     border-top: 1px solid #d1d5d6;
   }
-  .with_border svg {
+  .with_border span {
     display: block;
   }
   .flex_column,

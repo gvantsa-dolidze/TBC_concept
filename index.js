@@ -97,8 +97,13 @@ fixedBtn.addEventListener("click", () => {
   const closeBtnIcon = document.getElementById("close_btn_icon");
 
   noneBtn.style.display = noneBtn.style.display === "block" ? "none" : "block";
-  // openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
-  // closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
+  if (noneBtn.style.display === "none") {
+    openBtnIcon.style.display = "inline-block";
+    closeBtnIcon.style.display = "none";
+  } else {
+    openBtnIcon.style.display = "none";
+    closeBtnIcon.style.display = "inline-block";
+  }
 });
 
 // footer navigation menus

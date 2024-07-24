@@ -74,9 +74,7 @@ fetch("data.json")
     console.error("Error fetching data:", error);
   });
 
-
-
-  //choose language bnt
+//choose language bnt
 const hoverContainers = document.querySelectorAll(".lang_buttons_div");
 
 hoverContainers.forEach((container) => {
@@ -91,17 +89,15 @@ hoverContainers.forEach((container) => {
   };
 });
 
-
 //fixed button
 
-function toggleDisplay() {
+
+const toggleDisplay = () => {
   const noneBtn = document.getElementById("fixed_button_display_none_div");
+  const openBtn = document.getElementById("open_btn_icon");
+  const closeBtn = document.getElementById("close_btn_icon");
 
-  if (noneBtn.style.display === "none") {
-    noneBtn.style.display = "block";
-  } else {
-    noneBtn.style.display = "none";
-  }
-}
-
-
+  noneBtn.style.display = noneBtn.style.display === "none" ? "block" : "none";
+  openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
+  closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
+};

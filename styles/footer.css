@@ -72,6 +72,7 @@
   display: none;
 }
 
+
 @media only screen and (max-width: 950px) {
   .footer_main {
     flex-direction: column;
@@ -113,5 +114,4 @@
   .footer_top {
     padding-left: 15px;
   }
-  
 }

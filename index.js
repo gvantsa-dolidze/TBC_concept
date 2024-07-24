@@ -126,6 +126,37 @@ const myFunction3 = (event) => {
     linkToShow.style.display === "block" ? "none" : "block";
 };
 
+   const checkScreenWidth = () => {
+        let link = document.getElementById('link_to_click');
+        let link2 = document.getElementById('link_to_click2');
+        let link3 = document.getElementById('link_to_click3');
+        if (window.innerWidth <= 950) {
+            link.onclick = myFunction1;
+            link.href = '#';
+
+            link2.onclick = myFunction2;
+            link2.href = '#';
+
+            link3.onclick = myFunction3;
+            link.href = '#';
+
+        } else {
+            link.href = '#'; 
+            link.onclick = null;
+
+            link2.href = '#'; 
+            link2.onclick = null;
+
+            link3.href = '#'; 
+            link3.onclick = null;
+        }
+    }
+
+    window.onload = checkScreenWidth;
+    window.onresize = checkScreenWidth;
+
+
+
 // burger button
 
 const burgerMenu = document.getElementById("burger_btn");

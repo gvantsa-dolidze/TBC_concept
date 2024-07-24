@@ -96,7 +96,7 @@ fixedBtn.addEventListener("click", () => {
   const openBtn = document.getElementById("open_btn_icon");
   const closeBtn = document.getElementById("close_btn_icon");
 
-  noneBtn.style.display = noneBtn.style.display === "none" ? "block" : "none";
+  noneBtn.style.display = noneBtn.style.display === "block" ? "none" : "block";
   openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
   closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
 });
@@ -106,19 +106,19 @@ const myFunction1 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none1");
   linkToShow.style.display =
-    linkToShow.style.display === "none" ? "block" : "none";
+    linkToShow.style.display === "block" ? "none" : "block";
 };
 const myFunction2 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none2");
   linkToShow.style.display =
-    linkToShow.style.display === "none" ? "block" : "none";
+    linkToShow.style.display === "block" ? "none" : "block";
 };
 const myFunction3 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none3");
   linkToShow.style.display =
-    linkToShow.style.display === "none" ? "block" : "none";
+    linkToShow.style.display === "block" ? "none" : "block";
 };
 
 // burger button

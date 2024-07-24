@@ -100,7 +100,7 @@ const toggleDisplay = () => {
   closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
 };
 
-//footer navigation menus
+// footer navigation menus
 const myFunction1 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none1");
@@ -116,3 +116,5 @@ const myFunction3 = (event) => {
   const linkToShow = document.getElementById("mob_none3");
   linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
 }
+
+

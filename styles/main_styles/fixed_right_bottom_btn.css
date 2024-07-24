@@ -1,0 +1,67 @@
+
+.fixed_button {
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+.block_btn{
+    font-size: 50px;
+    color:#424a4d;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+.block_btn:hover {
+    color: rgb(101, 101, 101);
+}
+.none_fixed_column_btn_div{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.fixed_button_display_none_div{ 
+    position: fixed;
+    bottom: 110px; 
+    right: 50px; 
+    display: none;
+}
+.none_btn{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight:bold;
+    color:#424a4d;
+    border:2px solid #424a4d;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.none_btn:hover{
+    color:#fff;
+    background-color: #3295ce;
+    border: 2px solid #3295ce;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 110px;
+    background-color: #424a4d;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    right: 120%;
+    top:10px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

@@ -101,3 +101,20 @@ const toggleDisplay = () => {
   openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
   closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
 };
+
+
+const myFunction1 = (event) => {
+  event.preventDefault();
+  const linkToShow = document.getElementById("mob_none1");
+  linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
+}
+const myFunction2 = (event) => {
+  event.preventDefault();
+  const linkToShow = document.getElementById("mob_none2");
+  linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
+}
+const myFunction3 = (event) => {
+  event.preventDefault();
+  const linkToShow = document.getElementById("mob_none3");
+  linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
+}

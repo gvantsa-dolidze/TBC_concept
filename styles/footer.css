@@ -85,8 +85,12 @@
     flex-direction: column-reverse;
     align-items: flex-start;
   }
-  #mob_none {
+  #mob_none1, #mob_none2, #mob_none3 {
     display: none;
+  }
+  #mob_none1 a, #mob_none2 a, #mob_none3 a {
+    padding-top:25px;
+    padding-left:15px;
   }
   .with_border {
     border-bottom: 1px solid #d1d5d6;

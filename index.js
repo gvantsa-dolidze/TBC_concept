@@ -93,12 +93,12 @@ hoverContainers.forEach((container) => {
 const fixedBtn = document.getElementById("fixed_button");
 fixedBtn.addEventListener("click", () => {
   const noneBtn = document.getElementById("fixed_button_display_none_div");
-  const openBtn = document.getElementById("open_btn_icon");
-  const closeBtn = document.getElementById("close_btn_icon");
+  const openBtnIcon = document.getElementById("open_btn_icon");
+  const closeBtnIcon = document.getElementById("close_btn_icon");
 
   noneBtn.style.display = noneBtn.style.display === "block" ? "none" : "block";
-  openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
-  closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
+  // openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
+  // closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
 });
 
 // footer navigation menus

@@ -89,74 +89,6 @@ hoverContainers.forEach((container) => {
   };
 });
 
-//fixed btn
-const fixedBtn = document.getElementById("fixed_button");
-fixedBtn.addEventListener("click", () => {
-  const noneBtn = document.getElementById("fixed_button_display_none_div");
-  const openBtnIcon = document.getElementById("open_btn_icon");
-  const closeBtnIcon = document.getElementById("close_btn_icon");
-
-  noneBtn.style.display = noneBtn.style.display === "block" ? "none" : "block";
-  if (noneBtn.style.display === "none") {
-    openBtnIcon.style.display = "inline-block";
-    closeBtnIcon.style.display = "none";
-  } else {
-    openBtnIcon.style.display = "none";
-    closeBtnIcon.style.display = "inline-block";
-  }
-});
-
-// footer navigation menus
-const myFunction1 = (event) => {
-  event.preventDefault();
-  const linkToShow = document.getElementById("mob_none1");
-  linkToShow.style.display =
-    linkToShow.style.display === "block" ? "none" : "block";
-};
-const myFunction2 = (event) => {
-  event.preventDefault();
-  const linkToShow = document.getElementById("mob_none2");
-  linkToShow.style.display =
-    linkToShow.style.display === "block" ? "none" : "block";
-};
-const myFunction3 = (event) => {
-  event.preventDefault();
-  const linkToShow = document.getElementById("mob_none3");
-  linkToShow.style.display =
-    linkToShow.style.display === "block" ? "none" : "block";
-};
-
-   const checkScreenWidth = () => {
-        let link = document.getElementById('link_to_click');
-        let link2 = document.getElementById('link_to_click2');
-        let link3 = document.getElementById('link_to_click3');
-        if (window.innerWidth <= 950) {
-            link.onclick = myFunction1;
-            link.href = '#';
-
-            link2.onclick = myFunction2;
-            link2.href = '#';
-
-            link3.onclick = myFunction3;
-            link.href = '#';
-
-        } else {
-            link.href = '#'; 
-            link.onclick = null;
-
-            link2.href = '#'; 
-            link2.onclick = null;
-
-            link3.href = '#'; 
-            link3.onclick = null;
-        }
-    }
-
-    window.onload = checkScreenWidth;
-    window.onresize = checkScreenWidth;
-
-
-
 // burger button
 
 const burgerMenu = document.getElementById("burger_btn");
@@ -316,3 +248,77 @@ burgerMenu.addEventListener("click", function () {
     }
   }
 });
+
+
+
+//fixed btn
+const fixedBtn = document.getElementById("fixed_button");
+fixedBtn.addEventListener("click", () => {
+  const noneBtn = document.getElementById("fixed_button_display_none_div");
+  const openBtnIcon = document.getElementById("open_btn_icon");
+  const closeBtnIcon = document.getElementById("close_btn_icon");
+
+  noneBtn.style.display = noneBtn.style.display === "block" ? "none" : "block";
+  if (noneBtn.style.display === "none") {
+    openBtnIcon.style.display = "inline-block";
+    closeBtnIcon.style.display = "none";
+  } else {
+    openBtnIcon.style.display = "none";
+    closeBtnIcon.style.display = "inline-block";
+  }
+});
+
+
+
+// footer navigation menus
+// const myFunction1 = (event) => {
+//   event.preventDefault();
+//   const linkToShow = document.getElementById("mob_none1");
+//   linkToShow.style.display =
+//     linkToShow.style.display === "block" ? "none" : "block";
+// };
+// const myFunction2 = (event) => {
+//   event.preventDefault();
+//   const linkToShow = document.getElementById("mob_none2");
+//   linkToShow.style.display =
+//     linkToShow.style.display === "block" ? "none" : "block";
+// };
+// const myFunction3 = (event) => {
+//   event.preventDefault();
+//   const linkToShow = document.getElementById("mob_none3");
+//   linkToShow.style.display =
+//     linkToShow.style.display === "block" ? "none" : "block";
+// };
+
+//    const checkScreenWidth = () => {
+//         let link = document.getElementById('link_to_click');
+//         let link2 = document.getElementById('link_to_click2');
+//         let link3 = document.getElementById('link_to_click3');
+//         if (window.innerWidth <= 950) {
+//             link.onclick = myFunction1;
+//             link.href = '#';
+
+//             link2.onclick = myFunction2;
+//             link2.href = '#';
+
+//             link3.onclick = myFunction3;
+//             link.href = '#';
+
+//         } else {
+//             link.href = '#'; 
+//             link.onclick = null;
+
+//             link2.href = '#'; 
+//             link2.onclick = null;
+
+//             link3.href = '#'; 
+//             link3.onclick = null;
+//         }
+//     }
+
+//     window.onload = checkScreenWidth;
+//     window.onresize = checkScreenWidth;
+
+
+
+

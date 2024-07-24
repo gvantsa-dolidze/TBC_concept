@@ -93,15 +93,6 @@ hoverContainers.forEach((container) => {
 
 
 //fixed button
-// const fixedBtn = document.getElementById("fixed_btn");
-// const noneBtn = document.getElementById("fixed_button_display_none_div");
-// fixedBtn.addEventListener("click", function() {
-//   if (noneBtn.style.display === "none") {
-//     noneBtn.style.display = "block"; // Show the div
-//   } else {
-//     noneBtn.style.display = "none"; // Hide the div
-//   }
-// });
 
 function toggleDisplay() {
   const noneBtn = document.getElementById("fixed_button_display_none_div");

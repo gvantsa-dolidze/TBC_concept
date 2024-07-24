@@ -89,8 +89,10 @@ hoverContainers.forEach((container) => {
   };
 });
 
-//fixed button
-const toggleDisplay = () => {
+
+//fixed btn
+const fixedBtn = document.getElementById("fixed_button");
+fixedBtn.addEventListener("click", () => {
   const noneBtn = document.getElementById("fixed_button_display_none_div");
   const openBtn = document.getElementById("open_btn_icon");
   const closeBtn = document.getElementById("close_btn_icon");
@@ -98,23 +100,33 @@ const toggleDisplay = () => {
   noneBtn.style.display = noneBtn.style.display === "none" ? "block" : "none";
   openBtn.style.display = openBtn.style.display === "block" ? "none" : "block";
   closeBtn.style.display = closeBtn.style.display === "none" ? "block" : "none";
-};
+});
+
+
 
 // footer navigation menus
 const myFunction1 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none1");
-  linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
-}
+  linkToShow.style.display =
+    linkToShow.style.display === "none" ? "block" : "none";
+};
 const myFunction2 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none2");
-  linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
-}
+  linkToShow.style.display =
+    linkToShow.style.display === "none" ? "block" : "none";
+};
 const myFunction3 = (event) => {
   event.preventDefault();
   const linkToShow = document.getElementById("mob_none3");
-  linkToShow.style.display = linkToShow.style.display === "none" ? "block" : "none";
-}
+  linkToShow.style.display =
+    linkToShow.style.display === "none" ? "block" : "none";
+};
 
+// burger button
 
+const burgerBtn = document.getElementById("burger_btn");
+burgerBtn.addEventListener("click", () => {
+  console.log("nabbbx");
+});

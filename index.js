@@ -136,7 +136,7 @@ burgerMenu.addEventListener("click", function () {
     burgerIcon.classList.add("bi-x")
     const box = document.createElement("div");
     box.classList.add("burger_box");
-    box.innerHTML = `<footer class="footer">
+    box.innerHTML = `<section class="footer">
     <div class="footer_main" id="footer_for_burger">
       <div class="flex_row" style="padding-bottom:60px">
         <div>
@@ -272,7 +272,7 @@ burgerMenu.addEventListener("click", function () {
       </div>
 
     </div>
-  </footer>`;
+  </section>`;
     document.body.appendChild(box);
     isOpen = true;
   } else {

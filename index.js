@@ -14,7 +14,12 @@ fetch("data.json")
 `;
       container0.appendChild(gridElement);
     });
+
     const container = document.getElementById("flex_scrollbar");
+
+    const cardContainer = document.createElement("div");
+    cardContainer.className = "card-container";
+
     data.offers.forEach((item) => {
       const card = document.createElement("div");
       card.className = "card";
@@ -30,10 +35,15 @@ fetch("data.json")
       </div>
     </a>
 `;
-      container.appendChild(card);
+      cardContainer.appendChild(card);
+      container.appendChild(cardContainer);
     });
 
     const container3 = document.getElementById("products_scrollbar");
+
+    const cardContainer3 = document.createElement("div");
+    cardContainer3.className = "card-container";
+
     data.products.forEach((item) => {
       const card = document.createElement("div");
       // card.className = "card";
@@ -48,10 +58,14 @@ fetch("data.json")
       </div>
     </a>
 `;
-      container3.appendChild(card);
+      cardContainer3.appendChild(card);
+      container3.appendChild(cardContainer3);
     });
 
     const container1 = document.getElementById("awards_scrollbar");
+    const cardContainer1 = document.createElement("div");
+    cardContainer1.className = "card-container";
+
     data.awards.forEach((item) => {
       const card = document.createElement("div");
       // card.className = "card";
@@ -66,7 +80,8 @@ fetch("data.json")
       </div>
     </a>
 `;
-      container1.appendChild(card);
+      cardContainer1.appendChild(card);
+      container1.appendChild(cardContainer1);
     });
   })
 
@@ -106,7 +121,7 @@ const toggleNav = (navId, event) => {
     arrowIcon.classList.remove("bi-chevron-down");
     arrowIcon.classList.add("bi-chevron-up");
   }
-}
+};
 
 // burger button
 const burgerMenu = document.getElementById("burger_btn");
@@ -285,4 +300,13 @@ fixedBtn.addEventListener("click", () => {
 });
 
 
+const scrollContainer = document.getElementById("flex_scrollbar");
 
+  scrollContainer.addEventListener("click", (event) => {
+    // Calculate the click position relative to the container
+    const containerRect = scrollContainer.getBoundingClientRect();
+    const clickX = event.clientX - containerRect.left;
+    
+    // Scroll to the clicked position
+    scrollContainer.scrollLeft = clickX + scrollContainer.scrollLeft - (containerRect.width / 2);
+  });

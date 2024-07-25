@@ -71,3 +71,11 @@
 .flex_scrollbar::-webkit-scrollbar:vertical {
     display: none;
 }
+
+
+
+
+.card-container {
+    display:flex;
+    gap:20px;
+}

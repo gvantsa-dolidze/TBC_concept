@@ -89,6 +89,25 @@ hoverContainers.forEach((container) => {
   };
 });
 
+// footer navigation
+const toggleNav = (navId, event) => {
+  event.preventDefault();
+  const navElement = document.getElementById(navId);
+  const arrowIcon = document
+    .getElementById(navId)
+    .previousElementSibling.querySelector("i");
+
+  if (navElement.style.display === "block") {
+    navElement.style.display = "none";
+    arrowIcon.classList.remove("bi-chevron-up");
+    arrowIcon.classList.add("bi-chevron-down");
+  } else {
+    navElement.style.display = "block";
+    arrowIcon.classList.remove("bi-chevron-down");
+    arrowIcon.classList.add("bi-chevron-up");
+  }
+}
+
 // burger button
 const burgerMenu = document.getElementById("burger_btn");
 const burgerIcon = document.getElementById("burger_icon");
@@ -103,22 +122,22 @@ burgerMenu.addEventListener("click", function () {
       <div class="flex_row" style="padding-bottom:60px">
         <div>
           <div class="with_border with_top_border">
-            <a href="#" onclick="myFunction1(event)" id="link_to_click">
-              <h3>პროდუქტები</h3><span><i id="arrowIcon" class="bi bi-chevron-down"></i></span>
+            <a href="#" onclick="toggleNav('mob_none4', event)" id="link_to_click4">
+              <h3>პროდუქტები</h3><span><i id="arrowIcon4" class="bi bi-chevron-down"></i></span>
             </a>
           </div>
-          <nav id="mob_none1" class="content">
+          <nav id="mob_none4" class="content">
             <a href="#">ნაკრები</a>
             <a href="#">პერსონალური</a>
           </nav>
         </div>
         <div>
           <div class="with_border">
-            <a href="#" onclick="myFunction2(event)">
-              <h3>შეთავაზებები</h3><span><i id="arrowIcon" class="bi bi-chevron-down"></i></span>
+            <a href="#" onclick="toggleNav('mob_none5', event)" id="link_to_click5">
+              <h3>შეთავაზებები</h3><span><i id="arrowIcon5" class="bi bi-chevron-down"></i></span>
             </a>
           </div>
-          <nav id="mob_none2" class="content">
+          <nav id="mob_none5" class="content">
             <a href="#">მიმოხილვა</a>
             <a href="#">შეთავაზებები</a>
             <a href="#">ღონისძიებები</a>
@@ -126,11 +145,11 @@ burgerMenu.addEventListener("click", function () {
         </div>
         <div>
           <div class="with_border">
-            <a href="#" onclick="myFunction3(event)">
-              <h3>კონცეფტის სივრცე</h3><span><i id="arrowIcon" class="bi bi-chevron-down"></i></span>
+            <a href="#" onclick="toggleNav('mob_none6', event)" id="link_to_click6">
+              <h3>კონცეფტის სივრცე</h3><span><i id="arrowIcon6" class="bi bi-chevron-down"></i></span>
             </a>
           </div>
-          <nav id="mob_none3" class="content">
+          <nav id="mob_none6" class="content">
             <a href="#">მიმოხილვა</a>
             <a href="#">კაფე</a>
             <a href="#">ბიბლიოთეკა</a>
@@ -266,21 +285,4 @@ fixedBtn.addEventListener("click", () => {
 });
 
 
-// footer navigation
-const toggleNav = (navId, event) => {
-  event.preventDefault();
-  const navElement = document.getElementById(navId);
-  const arrowIcon = document
-    .getElementById(navId)
-    .previousElementSibling.querySelector("i");
 
-  if (navElement.style.display === "block") {
-    navElement.style.display = "none";
-    arrowIcon.classList.remove("bi-chevron-up");
-    arrowIcon.classList.add("bi-chevron-down");
-  } else {
-    navElement.style.display = "block";
-    arrowIcon.classList.remove("bi-chevron-down");
-    arrowIcon.classList.add("bi-chevron-up");
-  }
-}

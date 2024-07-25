@@ -42,7 +42,7 @@
 .section_title a:hover {
   color: #3295ce;
 }
-.text_section p{
+.text_section p {
   font-size: 36px;
   font-weight: 500;
   line-height: 1.5;
@@ -80,10 +80,22 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .text_section p{
+  .text_section p {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  .grid-container::-webkit-scrollbar {
+    height: 2px;
+  }
+  .grid-container::-webkit-scrollbar-track {
+    background: #d1d5d6;
+  }
+  .grid-container::-webkit-scrollbar-thumb {
+    background: #0000ff;
+    border-radius: 1px;
+  }
+  .grid-container::-webkit-scrollbar:vertical {
+    display: none;
+  }
 }

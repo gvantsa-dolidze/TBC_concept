@@ -54,3 +54,20 @@
 }
 
 
+
+
+
+
+.flex_scrollbar::-webkit-scrollbar {
+    height: 2px;
+}
+.flex_scrollbar::-webkit-scrollbar-track {
+    background: #d1d5d6;
+}
+.flex_scrollbar::-webkit-scrollbar-thumb {
+    background: #0000ff;
+    border-radius: 1px;
+}
+.flex_scrollbar::-webkit-scrollbar:vertical {
+    display: none;
+}

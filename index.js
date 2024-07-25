@@ -298,15 +298,3 @@ fixedBtn.addEventListener("click", () => {
     closeBtnIcon.style.display = "inline-block";
   }
 });
-
-
-const scrollContainer = document.getElementById("flex_scrollbar");
-
-  scrollContainer.addEventListener("click", (event) => {
-    // Calculate the click position relative to the container
-    const containerRect = scrollContainer.getBoundingClientRect();
-    const clickX = event.clientX - containerRect.left;
-    
-    // Scroll to the clicked position
-    scrollContainer.scrollLeft = clickX + scrollContainer.scrollLeft - (containerRect.width / 2);
-  });

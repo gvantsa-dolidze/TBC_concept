@@ -74,7 +74,7 @@ fetch("data.json")
     console.error("Error fetching data:", error);
   });
 
-//choose language bnt
+// choose language bnt
 const hoverContainers = document.querySelectorAll(".lang_buttons_div");
 
 hoverContainers.forEach((container) => {
@@ -90,13 +90,12 @@ hoverContainers.forEach((container) => {
 });
 
 // burger button
-
 const burgerMenu = document.getElementById("burger_btn");
-const burgerIcon = document.getElementById("burger_icon")
+const burgerIcon = document.getElementById("burger_icon");
 let isOpen = false;
 burgerMenu.addEventListener("click", function () {
   if (!isOpen) {
-    burgerIcon.classList.add("bi-x")
+    burgerIcon.classList.add("bi-x");
     const box = document.createElement("div");
     box.classList.add("burger_box");
     box.innerHTML = `<section class="footer">
@@ -242,16 +241,14 @@ burgerMenu.addEventListener("click", function () {
     // Box is open, so close it
     const box = document.querySelector(".burger_box");
     if (box) {
-      burgerIcon.classList.remove("bi-x")
+      burgerIcon.classList.remove("bi-x");
       document.body.removeChild(box);
       isOpen = false;
     }
   }
 });
 
-
-
-//fixed btn
+// fixed btn
 const fixedBtn = document.getElementById("fixed_button");
 fixedBtn.addEventListener("click", () => {
   const noneBtn = document.getElementById("fixed_button_display_none_div");
@@ -269,56 +266,21 @@ fixedBtn.addEventListener("click", () => {
 });
 
 
+// footer navigation
+const toggleNav = (navId, event) => {
+  event.preventDefault();
+  const navElement = document.getElementById(navId);
+  const arrowIcon = document
+    .getElementById(navId)
+    .previousElementSibling.querySelector("i");
 
-// footer navigation menus
-// const myFunction1 = (event) => {
-//   event.preventDefault();
-//   const linkToShow = document.getElementById("mob_none1");
-//   linkToShow.style.display =
-//     linkToShow.style.display === "block" ? "none" : "block";
-// };
-// const myFunction2 = (event) => {
-//   event.preventDefault();
-//   const linkToShow = document.getElementById("mob_none2");
-//   linkToShow.style.display =
-//     linkToShow.style.display === "block" ? "none" : "block";
-// };
-// const myFunction3 = (event) => {
-//   event.preventDefault();
-//   const linkToShow = document.getElementById("mob_none3");
-//   linkToShow.style.display =
-//     linkToShow.style.display === "block" ? "none" : "block";
-// };
-
-//    const checkScreenWidth = () => {
-//         let link = document.getElementById('link_to_click');
-//         let link2 = document.getElementById('link_to_click2');
-//         let link3 = document.getElementById('link_to_click3');
-//         if (window.innerWidth <= 950) {
-//             link.onclick = myFunction1;
-//             link.href = '#';
-
-//             link2.onclick = myFunction2;
-//             link2.href = '#';
-
-//             link3.onclick = myFunction3;
-//             link.href = '#';
-
-//         } else {
-//             link.href = '#'; 
-//             link.onclick = null;
-
-//             link2.href = '#'; 
-//             link2.onclick = null;
-
-//             link3.href = '#'; 
-//             link3.onclick = null;
-//         }
-//     }
-
-//     window.onload = checkScreenWidth;
-//     window.onresize = checkScreenWidth;
-
-
-
-
+  if (navElement.style.display === "block") {
+    navElement.style.display = "none";
+    arrowIcon.classList.remove("bi-chevron-up");
+    arrowIcon.classList.add("bi-chevron-down");
+  } else {
+    navElement.style.display = "block";
+    arrowIcon.classList.remove("bi-chevron-down");
+    arrowIcon.classList.add("bi-chevron-up");
+  }
+}

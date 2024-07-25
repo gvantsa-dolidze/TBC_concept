@@ -26,21 +26,23 @@
 }
 .footer_main {
   display: flex;
-  justify-content: flex-start;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .footer_main .flex_row {
   display: flex;
-  gap: 150px;
+  gap: 50px;
 }
 .footer_main .flex_row a:hover {
   color: #182cc0;
 }
+
 .footer_main .flex_column a:hover {
   text-decoration: underline;
 }
+
 .footer_main div nav {
   display: flex;
   flex-direction: column;
@@ -49,6 +51,7 @@
 .footer h3 {
   color: black;
   padding: 20px 0px;
+  width:200px
 }
 .footer_main a {
   color: #555f62;
@@ -70,8 +73,16 @@
 }
 .with_border span {
   display: none;
+  color:black;
+  font-size: 20px;
 }
-
+#mob_none1, #mob_none2, #mob_none3 {
+  display: block;
+}
+#mob_none1 a, #mob_none2 a, #mob_none3 a {
+  padding-top:25px;
+  display: block;
+}
 
 @media only screen and (max-width: 950px) {
   .footer_main {
@@ -89,6 +100,7 @@
   #mob_none1, #mob_none2, #mob_none3 {
     display: none;
   }
+  
   #mob_none1 a, #mob_none2 a, #mob_none3 a {
     padding-top:25px;
     padding-left:15px;

@@ -27,7 +27,7 @@
 .footer_main {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  /* gap: 50px; */
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -51,7 +51,7 @@
 .footer h3 {
   color: black;
   padding: 20px 0px;
-  width:200px
+  width:210px;
 }
 .footer_main a {
   color: #555f62;

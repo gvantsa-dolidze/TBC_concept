@@ -298,3 +298,29 @@ fixedBtn.addEventListener("click", () => {
     closeBtnIcon.style.display = "inline-block";
   }
 });
+
+// scrollbar functionality
+
+const containers = document.querySelectorAll(".flex_scrollbar");
+const scrollAmount = 100;
+
+const scroll = (container, direction) => {
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth",
+  });
+};
+
+document.querySelectorAll(".scroll-left").forEach((arrow) => {
+  arrow.addEventListener("click", function (event) {
+    event.preventDefault();
+    containers.forEach((container) => scroll(container, -1));
+  });
+});
+
+document.querySelectorAll(".scroll-right").forEach((arrow) => {
+  arrow.addEventListener("click", function (event) {
+    event.preventDefault();
+    containers.forEach((container) => scroll(container, 1));
+  });
+});

@@ -1,50 +1,56 @@
 body {
-    margin:0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
-h1, h2, h3, h4,h5, h6 {
-    padding:0; 
-    margin:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
 }
-button{
-    transition: all 0.5s;
+button {
+  transition: all 0.5s;
 }
 main {
-    padding-top:79px;
+  padding-top: 79px;
 }
-.first_section, .third_section {
-    background-color: #f9fafa;   
+.third_section,
+.first_section {
+  padding-bottom: 80px;
+  background-color: #f9fafa;
 }
-.third_section{
-    padding-bottom: 80px;
-}
-.first_section_main_div, .third_section_main_div, .footer_top, .footer_main, .footer_bottom {
-    max-width: 1110px;
-    width:100%;
-    margin:auto;
+.first_section_main_div,
+.third_section_main_div,
+.footer_top,
+.footer_main,
+.footer_bottom {
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
 }
 .section_title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:40px  0px;
-    font-size: 24px;  
-    font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+  font-size: 24px;
+  font-weight: 700;
 }
-a{
-    text-decoration: none;
-    color: black;
-    transition: all 0.5s;
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
 }
-.awards_scrollbar  .card{
-    background-color: #fff;
-    border: none;
-    justify-content: space-around;
+.awards_scrollbar .card {
+  background-color: #fff;
+  border: none;
+  justify-content: space-around;
 }
-
 
 .burger_box {
-  display:none;
-} 
-   
+  display: none;
+}

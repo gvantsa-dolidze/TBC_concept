@@ -30,7 +30,6 @@
   font-weight: 700;
   line-height: 1.4;
 }
-
 .card {
   width: 350px;
   border: 1px solid #e1e4e5;
@@ -44,6 +43,7 @@
 }
 .awards_card {
   height: 300px;
+  justify-content: center;
 }
 .products_card {
   height: 500px;

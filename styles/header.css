@@ -103,6 +103,10 @@
     height: calc(100vh - 70px);
     overflow: auto;
     background-color: #f9fafa;
+    scrollbar-width: none;
 }
+.burger_box::-webkit-scrollbar {
+    display: none; 
 }
 
+}

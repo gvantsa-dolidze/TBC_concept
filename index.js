@@ -166,7 +166,7 @@ burgerMenu.addEventListener("click", function () {
     box.classList.add("burger_box");
     box.innerHTML = `<section class="footer">
     <div class="footer_main" id="footer_for_burger">
-      <div class="flex_row" style="padding-bottom:60px">
+      <div class="flex_row">
         <div>
           <div class="with_border with_top_border">
             <a href="#" onclick="handleNavClick('mob_none4', event)" id="link_to_click4">
@@ -250,7 +250,7 @@ burgerMenu.addEventListener("click", function () {
             <h3>სოციალური ქსელები</h3>
           </div>
           <nav>
-            <div class="footer_buttons_flex">
+            <div class="footer_buttons_flex burger_footer">
               <button href="#"><svg width="17" height="16" viewBox="0 0 17 16" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_167_7547)">

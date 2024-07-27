@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding: 60px 0px;
-  gap:10px;
+  gap: 10px;
 }
 .flex div {
   background-color: #fff;
-  width:350px;
+  width: 350px;
   height: 180px;
   padding: 40px 48px;
   border-radius: 8px;

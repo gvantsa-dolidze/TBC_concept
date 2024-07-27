@@ -106,12 +106,31 @@ hoverContainers.forEach((container) => {
 });
 
 // footer navigation
-const toggleNav = (navId, event) => {
-  event.preventDefault();
+const handleNavClick = (navId, event, forceShow) => {
+  if (event) {
+    event.preventDefault();
+  }
+
   const navElement = document.getElementById(navId);
-  const arrowIcon = document
-    .getElementById(navId)
-    .previousElementSibling.querySelector("i");
+  const arrowIcon = navElement.previousElementSibling.querySelector("i");
+
+  if (forceShow === true) {
+    navElement.style.display = "block";
+    arrowIcon.classList.remove("bi-chevron-down");
+    arrowIcon.classList.add("bi-chevron-up");
+    return;
+  }
+
+  if (forceShow === false) {
+    navElement.style.display = "none";
+    arrowIcon.classList.remove("bi-chevron-up");
+    arrowIcon.classList.add("bi-chevron-down");
+    return;
+  }
+
+  if (window.innerWidth > 950) {
+    return;
+  }
 
   if (navElement.style.display === "block") {
     navElement.style.display = "none";
@@ -121,6 +140,18 @@ const toggleNav = (navId, event) => {
     navElement.style.display = "block";
     arrowIcon.classList.remove("bi-chevron-down");
     arrowIcon.classList.add("bi-chevron-up");
+  }
+};
+
+window.onresize = () => {
+  if (window.innerWidth > 950) {
+    handleNavClick("mob_none1", null, true);
+    handleNavClick("mob_none2", null, true);
+    handleNavClick("mob_none3", null, true);
+  } else {
+    handleNavClick("mob_none1", null, false);
+    handleNavClick("mob_none2", null, false);
+    handleNavClick("mob_none3", null, false);
   }
 };
 
@@ -138,7 +169,7 @@ burgerMenu.addEventListener("click", function () {
       <div class="flex_row" style="padding-bottom:60px">
         <div>
           <div class="with_border with_top_border">
-            <a href="#" onclick="toggleNav('mob_none4', event)" id="link_to_click4">
+            <a href="#" onclick="handleNavClick('mob_none4', event)" id="link_to_click4">
               <h3>პროდუქტები</h3><span><i id="arrowIcon4" class="bi bi-chevron-down"></i></span>
             </a>
           </div>
@@ -149,7 +180,7 @@ burgerMenu.addEventListener("click", function () {
         </div>
         <div>
           <div class="with_border">
-            <a href="#" onclick="toggleNav('mob_none5', event)" id="link_to_click5">
+            <a href="#" onclick="handleNavClick('mob_none5', event)" id="link_to_click5">
               <h3>შეთავაზებები</h3><span><i id="arrowIcon5" class="bi bi-chevron-down"></i></span>
             </a>
           </div>
@@ -161,7 +192,7 @@ burgerMenu.addEventListener("click", function () {
         </div>
         <div>
           <div class="with_border">
-            <a href="#" onclick="toggleNav('mob_none6', event)" id="link_to_click6">
+            <a href="#" onclick="handleNavClick('mob_none6', event)" id="link_to_click6">
               <h3>კონცეფტის სივრცე</h3><span><i id="arrowIcon6" class="bi bi-chevron-down"></i></span>
             </a>
           </div>

@@ -56,21 +56,21 @@
   background-color: #fff;
   box-shadow: 0 10px 10px 0 rgba(167, 167, 167, 0.2);
 }
-.top-logo-div{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    width:20px;
-    height:70px;
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 25%;
-    border-radius: 7px 0px 0px 7px;
-    z-index: 1;
+.top-logo-div {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 20px;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 25%;
+  border-radius: 7px 0px 0px 7px;
+  z-index: 1;
 }
 .top-logo {
- width:100%;
+  width: 100%;
 }
 .title_text {
   padding: 30px;

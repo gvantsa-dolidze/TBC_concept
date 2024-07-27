@@ -27,6 +27,7 @@ fetch("data.json")
     <a href="">
     <div class="card_img_container">
         <img src="${item.img}" class="bottom-img" alt="Image">  
+        <div class="top-logo-div">
         <img src="${item.logo}" class="top-logo" alt="logo">
         </div>
       <div class="title_text">
